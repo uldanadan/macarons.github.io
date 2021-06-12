@@ -1,0 +1,159 @@
+.food-menu {
+    padding: 4rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.food-menu h1 {
+    color: #7a7a7b;
+}
+
+.food-menu p {
+    margin: 2rem 0;
+}
+
+.food-category {
+    display: flex;
+}
+
+.food-category button {
+    padding: .5rem 2.5rem;
+    margin: 0 1rem;
+    outline: none;
+    border: 1px solid rgba(16,29,80,1);
+    background-color: transparent;
+    color: rgba(16,29,80,1);
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.food-category button:hover,
+.food-category button.active {
+    background-color: rgba(16,29,80,1);
+    color: #ffffff;
+}
+
+.food-item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+.food-item {
+    width: 25%;
+    height: 30rem;
+    padding: 1rem;
+}
+
+.item-wrap {
+    height: 100%;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.item-wrap:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.item-img {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.img-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+    border-radius: 2rem;
+}
+
+.img-holder:hover {
+    transform: scale(2) rotate(45deg);
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.item-info h3 {
+    color: #7a7a7b;
+}
+.item-info span{
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #c69963;
+}
+.food-item-wrap>div {
+    display: none;
+}
+
+.food-item-wrap.all>div {
+    display: block;
+}
+
+.food-item-wrap.salad>div.salad-type {
+    display: block;
+}
+
+.food-item-wrap.appetizers>div.appetizers-type {
+    display: block;
+}
+
+.food-item-wrap.pastas>div.pastas-type {
+    display: block;
+}
+
+.food-item-wrap.sandwiches>div.sandwiches-type {
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+
+    * {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    span {
+        font-size: inherit;
+    }
+
+    .food-menu {
+        padding: 4rem 0;
+    }
+
+    .food-item {
+        width: 50%;
+        height: 25rem;
+    }
+
+    .food-category {
+        overflow-y: scroll;
+    }
+
+    .food-category button {
+        width: max-content;
+    }
+}
