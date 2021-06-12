@@ -1,0 +1,467 @@
+﻿html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 85px;
+}
+
+.nav li, a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav li, a {
+    font-size: 15px;
+    text-decoration: none;
+}
+header h1{
+    font-size:20px ;
+    padding: 0px 10px;
+    font-family: 'Harlow Solid Italic', cursive;
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 140px;
+    text-transform: uppercase;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+
+}
+
+.h-menu {
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.h-menu span {
+    width: 80%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: black;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.4s ease-out;
+}
+
+.h-menu.open span:nth-child(2) {
+    background-color: #333;
+    display: none;
+}
+
+.h-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translateX(11px) translateY(7px);
+}
+
+.h-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translateX(2px) translateY(1px);
+}
+.logo_{
+    display: flex;
+}
+#logo {
+    cursor: pointer;
+    width: 35px;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: 15px;
+
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.nav__links li a:hover {
+    color: lightpink;
+}
+
+.slider{
+    background-image:url(images/background.jpg);
+    height:100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slider-box {
+    padding: 250px 0 102px;
+}
+.slider-box .title {
+    margin-bottom: 93px;
+}
+
+.slider-box .title .title-text {
+    font-family: 'Liberation Mono', cursive;
+    font-weight: bold;
+    max-width: 100%;
+    text-align: center;
+    font-size: 85px;
+    line-height: 49px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/*ABOUT*/
+.about_ {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+.about_ .row1 {
+    width: 70%;
+    margin: 0 auto;
+    background-image: url(images/rectangle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about_ p{
+    margin: 30px;
+    width: 45%;
+    line-height: 2em;
+}
+.about_ .macaron{
+    margin-top: -150px;
+    width: 400px;
+    height: 350px;
+}
+.about {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+.about_ .tortic{
+    width: 300px;
+    height: 360px;
+    margin-left: 530px;
+    margin-top: -480px;
+}
+.about .row {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about {
+    background-color: beige;
+}
+
+.about h1 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mt {
+    margin-top: -50px;
+}
+
+#text {
+    padding-bottom: 5px;
+    line-height: 2em;
+}
+
+.btn {
+    background-color: lightpink;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    font-weight: bold;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+}
+
+.catigories h2{
+    text-align: center;
+    line-height: 3em;
+}
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-img-fixed {
+    background-attachment: fixed;
+}
+
+.food-menu h1 {
+    color: #7a7a7b;
+}
+
+.food-menu p {
+    margin: 2rem 0;
+}
+
+.food-category {
+    display: flex;
+}
+
+.food-category button {
+    padding: .5rem 2.5rem;
+    margin: 0 1rem;
+    outline: none;
+    border: 1px solid rgba(16,29,80,1);
+    background-color: transparent;
+    color: rgba(16,29,80,1);
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.food-category button:hover,
+.food-category button.active {
+    background-color: rgba(16,29,80,1);
+    color: #ffffff;
+}
+
+.food-item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+.food-item {
+    width: 25%;
+    height: 30rem;
+    padding: 1rem;
+}
+
+.item-wrap {
+    height: 100%;
+    transition: .4s ease-in-out;
+}
+
+.item-wrap:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.item-img {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.catigories p{
+    font-weight: bold;
+}
+
+.catigories a :hover{
+    color: black;
+}
+
+.catigories a{
+    text-decoration: none;
+}
+
+.item-info span{
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #c69963;
+}
+.food-item-wrap all{
+    width: 50%;
+}
+.catigories .row1{
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe3f0;
+    padding: 10px  52px;
+
+}
+.footer .footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+footer .footer-wrap-item .contacts-block__detail-item {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-wrap-item .contacts-block__detail-item img {
+    width: 24px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-wrap_{
+    border-top: 1px solid black;
+    line-height: 3em;
+}
+
+footer .tochka{
+    border-top: 1px solid black;
+    color: #ffe3f0;
+}
+
+.tochka_{
+    color: #ffe3f0;
+}
+
+.credit{
+    font-weight: bold;
+}
+
+@media(max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    .h-menu {
+        display: block;
+    }
+
+    #social {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+        position: fixed;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        height: 350px;
+        background-color: white;
+        opacity: 0.9;
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+
+    .nav__links {
+        padding-right: 37px;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .slider-box .title .title-text{
+    	font-size: 38px;
+    	text-align: center;
+    }
+    .about_ .tortic{
+        width: 280px;
+        height: 340px;
+        margin-left: -60px;
+        margin-top: 0px;
+    }
+    .about_ .macaron{
+        width: 300px;
+        height: 250px;
+        margin-left: 40px;
+    }
+    .about_ p{
+        width: 55%;
+    }
+}
+    @media only screen and (max-width: 720px){
+    #break {
+        width: 90%;
+    }
+
+    .about img{
+        padding: 0;
+    }
+
+    .about p{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .catigories h1 {
+        font-size: 3rem !important;
+    }
+
+    span {
+        font-size: inherit;
+    }
+
+    .food-menu {
+        padding: 4rem 0;
+    }
+
+    .food-item {
+        width: 50%;
+        height: 25rem;
+    }
+
+    .food-category {
+        overflow-y: scroll;
+    }
+
+    .food-category button {
+        width: max-content;
+    }
+
+}
+@media only screen and (max-width: 950px) {
+    footer{
+        padding: 0px;
+    }
+}
+
+
+
+
+
+
+
+
