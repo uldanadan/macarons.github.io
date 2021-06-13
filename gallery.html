@@ -83,5 +83,24 @@
         </div>
     </div> 
 </div>
+    <script>
+    const menu = document.querySelector('.h-menu')
+    const nav = document.querySelector('.nav')
+
+    let isOpen = false
+
+    menu.addEventListener('click', () => {
+
+        if (isOpen) {
+            nav.style.display = 'none'
+            isOpen = false
+        } else {
+            nav.style.display = 'block'
+            isOpen = true
+        }
+
+        menu.classList.toggle('open')
+    });
+</script>
 </body>
 </html>
