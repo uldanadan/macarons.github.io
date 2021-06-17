@@ -142,6 +142,50 @@ header {
 	transform: scale(1.4) rotate(15deg);
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe3f0;
+    padding: 10px  52px;
+
+}
+.footer .footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+footer .footer-wrap-item .contacts-block__detail-item {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-wrap-item .contacts-block__detail-item img {
+    width: 24px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-wrap_{
+    border-top: 1px solid black;
+    line-height: 3em;
+}
+
+footer .tochka{
+    border-top: 1px solid black;
+    color: #ffe3f0;
+}
+
+.tochka_{
+    color: #ffe3f0;
+}
+
+.credit{
+    font-weight: bold;
+}
+
 @media(max-width:576px) {
     header {
         padding: 20px;
@@ -209,4 +253,14 @@ header {
 	.gallery-section .image{
 		flex: 100%;
 	}
+}
+
+@media only screen and (max-width: 950px) {
+    .footer-wrap {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer-wrap-item img{
+        display: none;
+    }
 }
