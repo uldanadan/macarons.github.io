@@ -453,11 +453,14 @@ footer .tochka{
 
 }
 @media only screen and (max-width: 950px) {
-    footer{
-        padding: 0px;
+    .footer-wrap {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer-wrap-item img{
+        display: none;
     }
 }
-
 
 
 
